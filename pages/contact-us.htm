@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Contact Us</title>
+	<!-- site css -->
+    <link rel="stylesheet" href="../css/site.min.css">
+    <link rel="stylesheet" href="../css/custome.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+
+    <!-- Bootflat js -->
+    <script type="text/javascript" src="../js/site.min.js"></script>
+    <script type="text/javascript" src="../js/classie.js"></script>
+<style>
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+</style>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+	    <div class="container clearfix">
+	    <span class="menu">
+	    	<img src="img/icons/menu-icon.png" />
+	    </span>
+	        <h1 id="logo">
+	            TERRITORY SUPPORT
+	        </h1>
+	        <nav>
+	            <a href="../index.html">HOME</a>
+	            <a href="">SERVICES</a>
+	            <a href="">ABOUT US</a>
+	            <a href="">PRICING</a>
+	            <a href="">LOCATIONS</a>
+	            <a href="#">CONTACT US</a>
+	        </nav>
+	    </div>
+	</header>
+	<div class="google-map jumbotron-contents">
+		<div class="row">
+			<div class="col-lg-7">
+				<h3>Location</h3>
+				<div id="map"></div>
+			</div>
+			<div class="col-lg-5">
+				<h3>Contact Information</h3>
+				<div class="contact-info">
+					<img class="call-icon" src="../img/call.png">
+					<h4>Australia</h4>
+					<div class="row">
+						<div class="col-lg-4">Address:</div>
+						<div class="col-lg-8">116 Vanderlin Dr, Wulagi NT 0812, Australia</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">Phone:</div>
+						<div class="col-lg-8">+61 407 480 688</div>
+					</div>
+					<div class="row row-margin-20">
+						<div class="col-lg-12"><strong>Have an idea for Territory Support Services ?</strong></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;<em>"My advice to other disabled people would be, concentrate on things your disability doesn't prevent you doing well, and don't regret the things it interferes with. Don't be disabled in spirit as well as physically." </em>
+							<div>-Stephen Hawking</div>
+						</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+      function initMap() {
+        var uluru = {lat: -12.380303, lng: 130.8950763};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj5vumIhthAUJPihe920-mvt_SYczDrds&callback=initMap">
+    </script>
+</body>
+</html>

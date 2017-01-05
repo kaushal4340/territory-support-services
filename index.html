@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Territory Support Services</title>
+	<!-- site css -->
+    <link rel="stylesheet" href="css/site.min.css">
+    <link rel="stylesheet" href="css/custome.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+
+    <!-- Bootflat js -->
+    <script type="text/javascript" src="js/site.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+	    <div class="container clearfix">
+	    <span class="menu">
+	    	<img src="img/icons/menu-icon.png" />
+	    </span>
+	        <h1 id="logo">
+	            TERRITORY SUPPORT
+	        </h1>
+	        <nav>
+	            <a href="">HOME</a>
+	            <a href="">SERVICES</a>
+	            <a href="">ABOUT US</a>
+	            <a href="">PRICING</a>
+	            <a href="">LOCATIONS</a>
+	            <a href="pages/contact-us.htm">CONTACT US</a>
+	        </nav>
+	    </div>
+	</header>
+
+	<div class="jumbotron">      
+	 	<!-- <div class="jumbotron-photo"><img src="img/home-2.png" /></div> -->
+	 	<div class="jumbotron-photo"><img src="img/img.jpg" /></div>	
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+			$(function(){
+		var menu = $('.menu'),
+			menuImg = $('.menu img'),
+			responsiveMenu = $('.responsive-menu-items'),
+			responsiveMenuImg = $('.responsive-menu-items img');
+
+
+		menu.click(function (evt) {
+			if(menu.hasClass('open')) {
+				responsiveMenu.animate({'height':'0px'},200,'linear');
+				menuImg.attr('src','img/icons/menu-icon.png');
+				menu.removeClass('open');
+				responsiveMenuImg.css('display', 'none');
+			} else {
+				responsiveMenu.animate({'height':'150px'},200,'linear');
+				menuImg.attr('src','img/icons/menu-close.png');
+				menu.addClass('open');
+				responsiveMenuImg.css('display', 'block');
+			}
+			
+
+			
+		});
+
+		function init() {
+		    window.addEventListener('scroll', function(e){
+		        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+		            shrinkOn = 300,
+		            header = document.querySelector("header");
+		        if (distanceY > shrinkOn) {
+		            classie.add(header,"smaller");
+		            $('.menu').addClass('smaller');
+		            $('.responsive-menu-items').css('top','51px');
+		        } else {
+		            if (classie.has(header,"smaller")) {
+		                classie.remove(header,"smaller");
+		            	$('.menu').removeClass('smaller');
+		            	$('.responsive-menu-items').css('top','81px');
+		            }
+		        }
+		    });
+		}
+
+		init();
+
+
+	});
+	</script>
+</body>
+</html>
