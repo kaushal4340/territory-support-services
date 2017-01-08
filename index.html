@@ -2,95 +2,160 @@
 <html>
 <head>
 	<title>Territory Support Services</title>
+	
+	<!-- meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+
 	<!-- site css -->
-    <link rel="stylesheet" href="css/site.min.css">
+    <!-- <link rel="stylesheet" href="css/site.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/custome.css">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
 
-    <!-- Bootflat js -->
-    <script type="text/javascript" src="js/site.min.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 
 </head>
-<body>
-
-	<!-- Header -->
-	<header>
-	    <div class="container clearfix">
-	    <span class="menu">
-	    	<img src="img/icons/menu-icon.png" />
-	    </span>
-	        <h1 id="logo">
-	            TERRITORY SUPPORT
-	        </h1>
-	        <nav>
-	            <a href="">HOME</a>
-	            <a href="">SERVICES</a>
-	            <a href="">ABOUT US</a>
-	            <a href="">PRICING</a>
-	            <a href="">LOCATIONS</a>
-	            <a href="pages/contact-us.htm">CONTACT US</a>
-	        </nav>
+<body>	
+	<nav class="navbar navbar-default mynavbar" role="navigation">
+	    <div class="container-fluid">
+	        <!-- logo -->
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand text" href="#">TERRITORY SUPPORT SERVICES</a>
+	        </div>
+	        <!-- menu -->
+	        <div class="collapse navbar-collapse navbar-right" id="navbar1">
+	            <ul class="nav navbar-nav">
+	                <li class=""><a class="text activemenu" href="#">Home</a></li>
+	                <li><a class="text" href="#">About</a></li>
+	                <li><a class="text" href="#">Services</a></li>
+	                <li><a class="text" href="#">Blog</a></li>
+	                <li><a class="text" href="pages/contact-us.htm">Contact</a></li>
+	            </ul>
+	        </div>
 	    </div>
-	</header>
+	</nav>
 
-	<div class="jumbotron">      
-	 	<!-- <div class="jumbotron-photo"><img src="img/home-2.png" /></div> -->
-	 	<div class="jumbotron-photo"><img src="img/img.jpg" /></div>	
-	</div>
+	<section id="welcome-area">
+		<div class="welcome-img">      
+		 	<img class="img-responsive" src="img/home-2.png" />
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="container">
+			<h3>Our Services</h3>
+			<div class="row">
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<section id="section3">
+		<div class="container">
+			<h3>How can we help</h3>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="largetext">Choose Territory Support Services as your Partner</div>
+				</div>
+			</div>
+		</div>
+		<div id="parallax">
+			<div class="innerparallax tss-overlay"></div>
+		</div>
+		<!-- <img class="img-responsive tss-overlay " src="img/support-services.jpg" /> -->
+	</section>
+
+	<section id="services">
+		<div class="container">
+			<h3>Information about specific disabilities</h3>
+			<div class="row">
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+				<div class="col-md-6 col-sm-3 col-lg-3">
+					<div class="content-box">LOREM IPSUM</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<footer class="text-center">
+	    <div class="footer-above">
+	        <div class="container">
+	            <div class="row">
+	                <div class="footer-col col-md-4">
+	                    <h3>Location</h3>
+	                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+	                </div>
+	                <div class="footer-col col-md-4">
+	                    <h3>Around the Web</h3>
+	                        <!-- some social networks -->
+	                        <ul class="social">
+		                        <li> 
+		                        	<a href="#"><i class=" fa fa-facebook"></i></a>
+		                        </li>
+		                        <li> 
+		                        	<a href="#"><i class="fa fa-twitter"></i></a>
+		                        </li>
+		                        <li> 
+		                        	<a href="#"><i class="fa fa-google-plus"></i></a>
+		                        </li>
+		                        <li> 
+		                        	<a href="#"><i class="fa fa-pinterest"></i></a>
+		                        </li>
+		                        <li> 
+		                        	<a href="#"><i class="fa fa-youtube"></i></a>
+		                        </li>
+		                    </ul>
+	                </div>
+	                <div class="footer-col col-md-4">
+	                    <h3>About Freelancer</h3>
+	                    <p>Freelance is a free to use, open source Bootstrap theme created by ...</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer-below">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    Copyright &copy; Author B1908
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
 
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript">
-			$(function(){
-		var menu = $('.menu'),
-			menuImg = $('.menu img'),
-			responsiveMenu = $('.responsive-menu-items'),
-			responsiveMenuImg = $('.responsive-menu-items img');
-
-
-		menu.click(function (evt) {
-			if(menu.hasClass('open')) {
-				responsiveMenu.animate({'height':'0px'},200,'linear');
-				menuImg.attr('src','img/icons/menu-icon.png');
-				menu.removeClass('open');
-				responsiveMenuImg.css('display', 'none');
-			} else {
-				responsiveMenu.animate({'height':'150px'},200,'linear');
-				menuImg.attr('src','img/icons/menu-close.png');
-				menu.addClass('open');
-				responsiveMenuImg.css('display', 'block');
-			}
-			
-
-			
-		});
-
-		function init() {
-		    window.addEventListener('scroll', function(e){
-		        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		            shrinkOn = 300,
-		            header = document.querySelector("header");
-		        if (distanceY > shrinkOn) {
-		            classie.add(header,"smaller");
-		            $('.menu').addClass('smaller');
-		            $('.responsive-menu-items').css('top','51px');
-		        } else {
-		            if (classie.has(header,"smaller")) {
-		                classie.remove(header,"smaller");
-		            	$('.menu').removeClass('smaller');
-		            	$('.responsive-menu-items').css('top','81px');
-		            }
-		        }
-		    });
-		}
-
-		init();
-
-
-	});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
